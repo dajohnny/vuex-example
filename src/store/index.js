@@ -3,6 +3,7 @@
  */
 import vue from 'vue'
 import Vuex from 'vuex'
+import business from './modules/moduleA'
 vue.use(Vuex)
 
 export default new Vuex.Store({
@@ -22,5 +23,8 @@ export default new Vuex.Store({
     AchangeAge ({commit}, payload) {
       commit('CHANGE_AGE', payload)
     }
+  },
+  modules: {
+    business
   }
 })

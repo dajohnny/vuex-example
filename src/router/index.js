@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Home from '@/components/home/home'
+import Business from '@/components/business/business'
 import Personal from '@/components/personal/personal'
 import PersonalInfo from '@/components/personal/info'
 import PersonalPerject from '@/components/personal/perject'
@@ -39,6 +40,11 @@ export default new Router({
           component: PersonalPerject
         }
       ]
+    },
+    {
+      path: '/business',
+      name: 'business',
+      component: Business
     }
   ]
 })

@@ -3,6 +3,7 @@
     <img src="./assets/logo.png">
     <div class="nav-warp">
       <router-link to="/home" tag="span"> home </router-link>
+      <router-link to="/business" tag="span"> business </router-link>
       <router-link to="/personal/info" tag="span"> personal-info </router-link>
       <router-link to="/personal/project" tag="span"> personal-project </router-link>
     </div>
@@ -33,7 +34,7 @@ export default {
   }
 
   .nav-warp {
-    width: 400px;
+    min-height: 60px;
     text-align: center;
   }
 
